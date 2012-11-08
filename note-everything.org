@@ -12,4 +12,17 @@ Otherwise xorg maybe do not know which wm to startup so startx doesnt work out..
   uname -r
 * <2012-11-08 Thu>
 ** org-mode and git-hub						:orgmode:git:
+   Start using org-mode to take notes.
+   Some important key-binding:
+   
+   Add tag: C-c C-c
+   Add time stamp: C-c .
+
+   About git-hub: I have an account bounding to my mailbox.
+   Here is the flow to sync:
+   1. git init
+   2. git add filename
+   3. git commit -m ""
+   4. git remote add origin https://github.com/username/Hello-World.git
+   5. git push origin master
 ** 
