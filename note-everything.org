@@ -1,6 +1,15 @@
-* debian
-** system
-** networking
-** x-windows
-* emacs
-** c++ programming
+* before <2012-11-08 Thu>
+** how to know what's installed?				 :debian:apt:
+   1. dpkg --listfiles packagename
+   2. dpkg --search filename
+** where is DNS server/host configured?			  :debian:networking:
+   1. /etc/resolv.conf <- DNS server
+   2. /bin/hostname
+** why .xinitrc doesnt work?					:debian:xorg:
+   In xinitrc file, not only "xmodmap ~/.xmodmap", but also "exec ratpoison" is necessary.
+Otherwise xorg maybe do not know which wm to startup so startx doesnt work out...
+** how to view kernel version?				      :debian:kernel:
+  uname -r
+* <2012-11-08 Thu>
+** org-mode and git-hub						:orgmode:git:
+** 
