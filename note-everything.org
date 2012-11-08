@@ -1,0 +1,6 @@
+* debian
+** system
+** networking
+** x-windows
+* emacs
+** c++ programming
