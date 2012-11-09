@@ -9,7 +9,11 @@
    In xinitrc file, not only "xmodmap ~/.xmodmap", but also "exec ratpoison" is necessary.
 Otherwise xorg maybe do not know which wm to startup so startx doesnt work out...
 ** how to view kernel version?				      :debian:kernel:
-  uname -r
+   uname -r
+** how to config audio after installation	      :debian:hardware:audio:
+   Just install alsamixer.
+   Then press F6 toggle through audio devices. 
+   !! Press "m" to toggle between "mute" and "on".
 * <2012-11-08 Thu>
 ** org-mode and git-hub						:orgmode:git:
    Start using org-mode to take notes.
@@ -18,11 +22,33 @@ Otherwise xorg maybe do not know which wm to startup so startx doesnt work out..
    Add tag: C-c C-c
    Add time stamp: C-c .
 
-   About git-hub: I have an account bounding to my mailbox.
+   About git-hub: I have an account bounding to my mailbox. pw:ak+87
    Here is the flow to sync:
    1. git init
    2. git add filename
    3. git commit -m ""
    4. git remote add origin https://github.com/username/Hello-World.git
    5. git push origin master
-** 
+* <2012-11-09 Fri>
+** ibus install/config					 :debian:inputmethod:
+   I choose ibus for default Chinese/Japanese input.
+   Install through apt should be straight forward. After that
+   1. ibus-setup to import Pinyin & Anthy
+   2. x might need to be restart
+   3. Add following lines to bashrc
+   | export GTK_IM_MODULE=ibus  |
+   | export XMODIFIERS=@im=ibus |
+   | export QT_IM_MODULE=ibus   |
+   4. not confirmed...
+      
+** cout or printf?						      :c:cpp:
+   printf provided by stdio.h is standard in C language.
+   cout provided by iostream is new feature in C++ language.
+   
+** cscope usage						       :cscope:emacs:
+   cscope is a independent utility support C source code browsing (not cpp?). 
+   cscope looks for a database file, cscope.files or cscope.out in current 
+directory. Otherwise cscope will return "no source files found".
+   xcscope.el is a emacs mode? which implement cscope utilities inside emacs.
+xcscope manual is just the comment part of xcscope.el itself. (search for 
+xcscope by $locate xcscope.el)
